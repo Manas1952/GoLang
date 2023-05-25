@@ -8,7 +8,10 @@
 package main
 
 // import declaration declares packages used in this file
-import "fmt"
+import (
+	"fmt"
+	"reflect"
+)
 
 // package scoped variables and constants
 var x int = 100
@@ -24,6 +27,8 @@ func main() {
 	var a int = 7
 	var b float64 = 3.5
 	const c int = 10
+
+	fmt.Println("->", reflect.TypeOf(a))
 
 	// Println() function prints out a line to stdout
 	// It belongs to package fmt
