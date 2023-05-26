@@ -10,6 +10,12 @@ func main() {
 	changeByReference(&n)
 	fmt.Println(n, &n)
 
+	var a int = 1
+	var b *int = &a
+
+	*b = 2
+	fmt.Println(a, *b)
+
 }
 
 func changeByValue(n int) {
