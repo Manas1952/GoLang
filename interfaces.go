@@ -30,7 +30,7 @@ func printData(s shape) {
 }
 
 func main() {
-	r := rectangle{1, 2}
+	//r := rectangle{1, 2}
 
-	printData(r)
+	//printData(r)
 }
