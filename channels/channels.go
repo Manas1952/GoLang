@@ -12,6 +12,7 @@ func main() {
 		time.Sleep(time.Second)
 		messages <- "ping"
 		messages <- "ping1"
+		fmt.Println("end")
 	}()
 
 	var msg string = <-messages

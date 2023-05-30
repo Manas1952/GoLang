@@ -8,6 +8,7 @@ func main() {
 	messages <- "msg1"
 	messages <- "msg2"
 	messages <- "msg3"
+	messages <- "msg3"
 
 	fmt.Println(<-messages)
 	fmt.Println(<-messages)
